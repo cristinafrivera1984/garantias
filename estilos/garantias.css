@@ -1,0 +1,22 @@
+.entrada {
+    font-size: 1rem;
+  }
+
+.entrada-verde {
+    color: #388E3C;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+:target {
+  animation: highlight 2s ease-out;
+}
+
+@keyframes highlight {
+  from {
+      background-color: #BBDEFB; /*En kit lighten 4 info*/
+  }
+  to {
+      background-color: transparent;
+  }
+}

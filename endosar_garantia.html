@@ -11,15 +11,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cristinafrivera1984/kit-ui-serc@v1.0/dist/css/estilos.min.css">
-    <link rel="stylesheet" href="./estilos/garantias.css">
-    <title>Editar garantía</title>
+    <link rel="stylesheet" href="./estilos/garantias.css"> 
+    <title>Endosar garantía</title>
 <style>
-    /*Felipe: Voy a agregar esta clase en el cdn del css así que no es necesario que copies esto*/
+/*Felipe: Voy a agregar esta clase en el cdn del css así que no es necesario que copies esto*/
 
 .kit-gob:disabled {
     border:1px solid rgba(var(--black),0.3);
 }
-
 /*Felipe: Voy a agregar esta clase en el cdn del css así que no es necesario que copies esto*/
 
 </style>
@@ -94,6 +93,8 @@
          <!--SIDEBAR-->
 
          <div class="white-container">
+
+
                 <!--MIGAS DE PAN--> 
                 <div class="d-flex justify-content-between flex-column flex-md-row">           
                     <div class="breadcrumbs flex-grow-1">
@@ -101,14 +102,15 @@
                             Bandeja de entrada</a> /
                         <a href="#" class="active"> Editar garantía</a>
                     </div>
-                    <!--boton de acciones-->
-                    <button class="action btn-primary me-2" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="material-symbols-outlined align-middle">
-                        arrow_drop_down
-                    </span>Acciones
+                    <!--boton de acciones
+                    <button class="action btn-primary me-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">Acciones
+                        <span class="material-symbols-outlined align-middle">
+                            arrow_drop_down
+                        </span>
                     </button>
                     <ul class="dropdown-menu">
                       <li>
-                        <a class="dropdown-item" href="endosar_garantia.html#tituloEndosar">
+                        <a class="dropdown-item" href="#">
                             Endosar
                         </a>
                     </li>
@@ -118,7 +120,7 @@
                         </a>
                       </li>
                     </ul>
-                    <!--boton de acciones-->
+                    boton de acciones-->
                     <button type="button" class="btn-secondary"> 
                         <span class="material-symbols-outlined align-middle">
                             arrow_back </span>
@@ -416,8 +418,105 @@
                     </div>
                    
                 <div class="margin-btw-titles"></div>
-                <h4 class="color-blue-dark-1 margin-title-main fw-semibold mt-4">Documentos</h4>
+                <h4 class="color-blue-dark-1 margin-title-main fw-semibold"  id="tituloEndosar">  Información de Endoso</h4>
 
+                <div class="row mt-4">
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <label for="..." class="form-label kit-gob">N° Endoso: <span class="color-base-warning-dk-3">(*)</span></label>
+                        <select class="form-select kit-gob is-invalid" id="..." aria-describedby="validationServer04Feedback" required>
+                            <option selected disabled value="">Selecciona</option>
+                            <option value="1">...</option>
+                          </select>
+                        <div class="invalid-feedback kit-gob">
+                            Selecciona el campo
+                        </div>                               
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <label for="..." class="form-label kit-gob">Motivo Endoso: <span class="color-base-warning-dk-3">(*)</span></label>
+                        <select class="form-select kit-gob is-invalid" id="..." aria-describedby="validationServer04Feedback" required>
+                            <option selected disabled value="">Selecciona</option>
+                            <option value="1">...</option>
+                          </select>
+                        <div class="invalid-feedback kit-gob">
+                            Selecciona el campo
+                        </div>                            
+                    </div>
+                </div>
+
+                <!--Este párrafo es una guia, quitar una vez que esté lista la validación porfa-->
+                <p class="color-base-warning-dk-3 my-4 fs-4">Ejemplo de campos con selección de aumento + glosa + cambio de fecha</p>
+                <!--Este párrafo es una guia, quitar una vez que esté lista la validación porfa-->
+                <div class="row mt-4">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
+                        <label for="validationServer03" class="form-label kit-gob entrada">Aumento de monto: <span class="color-base-warning-dk-3">(*)</span></label>
+                        <input type="text" class="form-control kit-gob entrada is-invalid" id="input1" aria-describedby="validationServer03Feedback" required>
+                        <div class="invalid-feedback kit-gob">
+                            Ingresa aumento de monto
+                        </div>                           
+                    </div> 
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-2 col-xxl-1">
+                        <label for="..." class="form-label kit-gob">Moneda:</label>
+                        <select class="form-select kit-gob" id="..." aria-describedby="validationServer04Feedback" disabled>
+                            <option selected disabled value="">UF</option>
+                            <option value="1">...</option>
+                        </select>                         
+                    </div>
+
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-2 col-xxl-2">
+                        <label for="validationServer03" class="form-label kit-gob">Aumento en CLP: </label>
+                        <input type="text" class="form-control kit-gob entrada entrada-verde" id="input2" aria-describedby="validationServer03Feedback" readonly>                         
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-4 col-xxl-2">
+                        <label for="validationServer03" class="form-label kit-gob">Monto Garantía:</label>
+                        <input type="text" class="form-control kit-gob" id="validationServer03" aria-describedby="validationServer03Feedback">                      
+                    </div> 
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-4 col-xxl-2">
+                        <label for="validationServer03" class="form-label kit-gob">Tipo de cambio:</label>
+                        <input type="text" class="form-control kit-gob" id="validationServer03" aria-describedby="validationServer03Feedback" disabled>                       
+                    </div>                                         
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
+                        <label for="validationServer03" class="form-label kit-gob entrada">Monto Total CLP Actualizado: <span class="material-symbols-outlined align-middle color-blue" type="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="El total incluye el monto ingresado más la cantidad anterior" > info </span> </label>
+                        <input type="text" class="form-control kit-gob entrada entrada-verde" id="input3" aria-describedby="validationServer03Feedback">                           
+                    </div> 
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-6">
+                        <label for="validationServer03" class="form-label kit-gob is-invalid">Glosa endoso: </label>
+                        <textarea class="form-control kit-gob" id="exampleFormControlTextarea1" rows="6" required></textarea>
+                        <div class="invalid-feedback kit-gob">
+                            Ingresa glosa de endoso
+                        </div> 
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-6  col-sm-3 col-lg-3 col-xl-2">
+                        <label for="validationServer03" class="form-label kit-gob is-invalid">Fecha Venc. endoso: <span class="color-base-warning-dk-3">(*)</span></label>
+                        <input type="date" class="form-control kit-gob" id="validationServer03" aria-describedby="validationServer03Feedback"  placeholder="...">
+                        <div class="invalid-feedback kit-gob">
+                           Ingresa fecha Venc. endoso
+                        </div>    
+                    </div>
+                </div>
+
+                <h4 class="color-blue-dark-1 margin-title-main fw-semibold mt-4">Documentos</h4>
+                    <div class="row mt-4">
+                        <div class="col-sm-12 col-md-8 col-lg-8">
+                            <!--ALERTA WARNING-->
+                            <div class="alert kit-gob alert-warning alert-dismissible d-flex align-items-center fade show" role="alert">
+                                <div class="flex-shrink-0 me-2">
+                                    <span class="material-symbols-outlined align-middle color-base-error">
+                                        warning
+                                    </span>
+                                </div>
+                                <div>
+                                    <h4>Información importante sobre la acción de endosar:</h4>
+                                    Es obligatorio adjuntar el <strong>“Endoso”</strong> y  <strong>“Firma Solicitud Custodia Endoso Garantía”.</strong>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                            <!--ALERTA WARNING-->
+                        </div>                      
+                   </div>
                     <div class="row mt-4">
                         <div class="col-sm-12 col-md-6 col-lg-6">
                             <label for="..." class="form-label kit-gob">Tipo de documento: </label>
@@ -429,9 +528,7 @@
                                 Tipo de documento
                             </div>                             
                         </div>
-
                     </div>
-
                     <div class="row mt-4">
                         <div class="col-lg-6">
                 <!--=====FILE INPUT / DRAG AND DROP=========-->
@@ -461,7 +558,8 @@
                             </div>
              <!--======FILE INPUT / DRAG AND DROP=========-->
                             <button type="button" class="btn-primary my-4"> Adjuntar documento <span class="material-symbols-outlined align-middle">
-                                upload  </span></button>
+                                upload  </span>
+                            </button>
                         </div>
                     </div>
 
@@ -566,8 +664,10 @@
                 <!--BOTONES FINALES-->
                 <div class="my-4">
                     <button type="button" class="btn-primary">
-                        <span class="material-symbols-outlined align-middle"> save </span> 
-                        Guardar
+                        <span class="material-symbols-outlined align-middle">
+                            send
+                            </span>
+                        Enviar endoso a custodia
                     </button>
                     <button type="button" class="btn-secondary"> 
                         <span class="material-symbols-outlined align-middle">
@@ -660,19 +760,53 @@
 </footer>
 <!--FOOTER-->   
 
-
-
 <script>
+
+
+   // Seleccionamos ambos inputs
+   const input1 = document.getElementById('input1');
+    const input2 = document.getElementById('input2');
+    const input3 = document.getElementById('input3');
+
+    // Escuchamos el evento 'input' en el primer campo
+    input1.addEventListener('input', () => {
+      const valor = input1.value;
+
+      // Verificamos si el valor ingresado es un número
+      if (!isNaN(valor) && valor.trim() !== "") {
+        input2.value = valor; // Reflejamos el número en el segundo input
+      } 
+      
+      if (!isNaN(valor) && valor.trim() !== "") {
+        input3.value = valor; // Reflejamos el número en el segundo input
+      }      
+      else {
+        input2.value = ""; // Limpiamos si no es un número válido
+        input3.value = ""; // Limpiamos si no es un número válido
+      }
+    });
+
+    
+
     document.addEventListener("DOMContentLoaded", () => {
-    const hash = window.location.hash; // Obtén el ancla (#id)
+    const hash = window.location.hash;
     if (hash) {
-        const target = document.querySelector(hash); // Busca el elemento con ese ID
+        const target = document.querySelector(hash);
         if (target) {
-            target.scrollIntoView({ behavior: "smooth" }); // Desplazamiento suave
+            target.scrollIntoView({ behavior: "smooth" });
         }
     }
 });
-</script>
+
+document.addEventListener('DOMContentLoaded', function () {
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+  tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+    new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+});
+
+    
+  </script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
