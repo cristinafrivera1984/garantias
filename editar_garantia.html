@@ -113,11 +113,249 @@
                         </a>
                     </li>
                       <li>
-                        <a class="dropdown-item" href="#">
+                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalSolDev">
                             Solicitar devolución
                         </a>
                       </li>
                     </ul>
+                     <!-- Modal SOLICITAR DEVOLUCION -->
+                       <div class="modal fade" id="modalSolDev" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog modal-lg">
+                              <div class="modal-content">
+                                   <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Solicitar devolución / Nº Garantía: 68798</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row my-3"> 
+                                            <div class="col-lg-3">
+                                                <label for="validationServer03" class="form-label kit-gob">Fecha y hora: </label>
+                                                <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00" />
+                                            </div>
+                                            <div class="row my-3">
+                                                <div class="col-lg-12 my-1">
+                                                    <p><strong>Empresa: </strong> Corporación Regional de Desarrollo Productivo de la Región de Tarapacá</p>
+                                                </div>
+                                                <div class="col-lg-3 my-1">
+                                                    <p><strong>R.U.T:</strong> 76.558.321-8</p>
+                                                </div>
+                                                <div class="col-lg-3 my-1">
+                                                    <p><strong>N documento: </strong> 577825</p>
+                                               </div>
+                                               <div class="col-lg-6 my-1">
+                                                    <p><strong>Tipo de garantía: </strong>Lorem ipsum lorem</p>
+                                               </div>   
+                                                <div class="col-lg-12 my-1">
+                                                    <p><strong>Descripción SAP: </strong> Donec a finibus ligula. Suspendisse eget metus aliquet, eleifend est sit amet, maximus urna.</p>
+                                                </div>
+                                                <div class="col-lg-12 my-1">
+                                                    <p><strong>Descripción Licitación: </strong> Proin ultricies nunc eu tellus luctus suscipit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                                                </div>                                                 
+                                            </div>
+                                            <div class="row my-3">
+                                                <div class="col-lg-6">
+                                                    <label for="..." class="form-label kit-gob">Nombre retirador: </label>
+                                                    <input type="text" class="form-control kit-gob" id="validationServer03" aria-describedby="validationServer03Feedback">
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <label for="..." class="form-label kit-gob">RUT retirador: </label>
+                                                    <input type="text" class="form-control kit-gob" id="validationServer03" aria-describedby="validationServer03Feedback">
+                                                </div>
+                                            </div>
+                                            <div class="row my-3">
+                                                <div class="col-lg-6">
+                                                    <label for="..." class="form-label kit-gob">Motivo de devolución: <span class="color-base-warning-dk-3">(*)</span></label>
+                                                    <select class="form-select kit-gob is-invalid" id="..." aria-describedby="validationServer04Feedback" required>
+                                                        <option selected disabled value="">Selecciona</option>
+                                                        <option value="1">...</option>
+                                                      </select>
+                                                    <div class="invalid-feedback kit-gob">
+                                                        Selecciona el campo
+                                                    </div>  
+                                                </div>
+                                                <div class="col-lg-6">
+                                                </div>
+                                                <!--INFO-->
+                                                <div class="alert m-2 my-4 kit-gob alert-primary alert-dismissible d-flex align-items-center fade show" role="alert">
+                                                    <div class="flex-shrink-0 me-2">
+                                                      <span class="material-symbols-outlined align-middle color-base-info">
+                                                        info
+                                                        </span>
+                                                     </div>
+                                                      <div>
+                                                        <h4>Información importante sobre este motivo de devolución:</h4>
+                                                        Con esta liberación de garantía, se certifica que el proyecto ha finalizado correctamente y que no existen obligaciones contractuales pendientes entre las partes.
+                                                      </div>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                                  </div>
+                                              <!--INFO-->
+                                            </div>
+
+                                            <div class="row my-2">
+                                                <div class="col-lg-6">
+                                                    <label for="..." class="form-label kit-gob">Selecciona tipo de poder: <span class="color-base-warning-dk-3">(*)</span></label>
+                                                    <select class="form-select kit-gob is-invalid" id="..." aria-describedby="validationServer04Feedback" required>
+                                                        <option selected disabled value="">Selecciona</option>
+                                                        <option value="1">...</option>
+                                                      </select>
+                                                    <div class="invalid-feedback kit-gob">
+                                                        Selecciona el campo
+                                                    </div>  
+                                                </div>
+                                                <div class="col-lg-6">
+                                                </div>
+                                             <!--INFO-->
+                                                <div class="alert m-2 my-4 kit-gob alert-primary alert-dismissible d-flex align-items-center fade show" role="alert">
+                                                    <div class="flex-shrink-0 me-2">
+                                                      <span class="material-symbols-outlined align-middle color-base-info">
+                                                        info
+                                                        </span>
+                                                     </div>
+                                                      <div>
+                                                        <h4>Información importante sobre tipo de poderes:</h4>
+                                                        Suspendisse neque velit, suscipit vel bibendum vehicula, porttitor in nisi.
+                                                      </div>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                                  </div>
+                                              <!--INFO-->
+                                            </div>
+                                            <div class="row mt-2">
+                                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                                    <label for="..." class="form-label kit-gob">Selecciona tipo de poder: </label>
+                                                    <select class="form-select kit-gob" id="..." aria-describedby="validationServer04Feedback">
+                                                        <option selected disabled value="">Selecciona</option>
+                                                        <option value="1">...</option>
+                                                      </select>
+                                                    <div class="invalid-feedback kit-gob">
+                                                        Tipo de documento
+                                                    </div>                             
+                                                </div>
+                        
+                                            </div>
+                        
+                                            <div class="row mt-4">
+                                                <div class="col-lg-6">
+                                        <!--=====FILE INPUT / DRAG AND DROP=========-->
+                                                    <div class="container form-group drop_zone ">
+                                                    <input type="file" class="upload-button" accept=".xlsx,.xls,image/*,.doc,.docx,.ppt,.pptx,.pdf">
+                                                    <span class="material-symbols-outlined fs-1 color-blue-dark-3">
+                                                        cloud_upload
+                                                        </span>
+                                                    <span for="upload-button">
+                                                        Arrastra archivo para subirlo           
+                                                    </span>
+                                                    <span>o</span>
+                                                    <label class="btn btn-default">
+                                                        o haz clic para buscarlo
+                                                        <input type="file" class="upload-button" accept=".xlsx,.xls,image/*,.doc,.docx,.ppt,.pptx,.pdf">
+                                                    </label>
+                                                    <div class="invalid-feedback">
+                                                        Seleccionar el documento.
+                                                    </div>
+                                                    <span>
+                                                        <em><small>Solo se permiten los archivos con las siguientes extensiones: <strong>PDF, DOC, DOCX, JPG, JPEG, XLS, XLSX</strong></small></em>
+                                                    </span>
+                                                    <div id="error"></div>
+                                                    <div id="image-display"><figure></figure></div>
+                        
+                                                    <div id="dropFile" class="d-none"></div>
+                                                    </div>
+                                     <!--======FILE INPUT / DRAG AND DROP=========-->
+                                                    <button type="button" class="btn-primary my-4"> Adjuntar documento <span class="material-symbols-outlined align-middle">
+                                                        upload  </span></button>
+                                                </div>
+                                            </div>
+                                        <!--TABLA-->
+                                        <div class="table-responsive">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                <tr>
+                                                    <th>Tipo de Poder</th>
+                                                    <th>Nombre documento</th>
+                                                    <th>Acciones</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>Garantía digitalizada</td>
+                                                    <td>garantia2024.pdf</td>
+                                                    <td> 
+                                                        <button class="action border-0 bg-transparent rounded" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span class="material-symbols-outlined align-middle color-blue">
+                                                                more_vert
+                                                            </span>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                          <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <span class="material-symbols-outlined align-middle">
+                                                                    download
+                                                                </span> Descargar
+                                                            </a>
+                                                        </li>
+                                                          <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <span class="material-symbols-outlined align-middle">
+                                                                    delete
+                                                                 </span> Eliminar
+                                                            </a>
+                                                          </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Garantía digitalizada</td>
+                                                    <td>garantia2024.pdf</td>
+                                                    <td> 
+                                                        <button class="action border-0 bg-transparent rounded" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <span class="material-symbols-outlined align-middle color-blue">
+                                                                more_vert
+                                                            </span>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                          <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <span class="material-symbols-outlined align-middle">
+                                                                    download
+                                                                </span> Descargar
+                                                            </a>
+                                                        </li>
+                                                          <li>
+                                                            <a class="dropdown-item" href="#">
+                                                                <span class="material-symbols-outlined align-middle">
+                                                                    delete
+                                                                 </span> Eliminar
+                                                            </a>
+                                                          </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                  
+                                            </tbody>
+                                            </table>
+                                        </div>
+                                        <!--TABLA-->
+
+
+
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer justify-content-start">
+
+                                         <button type="button" class="btn-primary ">
+                                            <span class="material-symbols-outlined align-middle">
+                                                send
+                                                </span>
+                                            Solicitar devolución
+                                        </button>
+                                  </div>
+                               </div>
+                            </div>
+                        </div>                          
+                    <!-- Modal SOLICITAR DEVOLUCION -->  
+
+
+
                     <!--boton de acciones-->
                     <button type="button" class="btn-secondary"> 
                         <span class="material-symbols-outlined align-middle">
