@@ -20,3 +20,29 @@
       background-color: transparent;
   }
 }
+
+ul.ul-download {
+  margin: 0;
+  list-style: none;
+}
+
+ul.ul-download li{
+  padding: 6px 0;
+
+}
+ul.ul-download li a{
+ color: #0D47A1;
+ text-decoration: none;
+}
+
+ul.ul-download li::before{
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin: 0px 2px -3px 0 ;
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 96 960 960" width="24"><path d="M480 776q-14 0-23-9L287 597q-9-9-9-22.5t9-22.5q9-9 22.5-9t22.5 9l124 124V296q0-14 9-23t23-9q14 0 23 9t9 23v373l124-124q9-9 22.5-9t22.5 9q9 9 9 22.5t-9 22.5L503 767q-9 9-23 9Zm-280 160q-14 0-23-9t-9-23q0-14 9-23t23-9h560q14 0 23 9t9 23q0 14-9 23t-23 9H200Z"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: brightness(0) saturate(100%) invert(19%) sepia(98%) saturate(2101%) hue-rotate(208deg) brightness(82%) contrast(92%);
+}

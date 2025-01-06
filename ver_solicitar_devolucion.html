@@ -11,17 +11,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cristinafrivera1984/kit-ui-serc@v1.0/dist/css/estilos.min.css">
-    <link rel="stylesheet" href="./estilos/garantias.css">
-    <title>Editar garantía</title>
+    <link rel="stylesheet" href="./estilos/garantias.css"> 
+    <title>Ver endoso garantía</title>
 <style>
-    /*Felipe: Voy a agregar esta clase en el cdn del css así que no es necesario que copies esto*/
-
+/*Felipe: Voy a agregar esta clase en el cdn del css así que no es necesario que copies esto*/
 .kit-gob:disabled {
     border:1px solid rgba(var(--black),0.3);
-}
-
+    }
 /*Felipe: Voy a agregar esta clase en el cdn del css así que no es necesario que copies esto*/
-
 </style>
 
 </head>
@@ -94,6 +91,8 @@
          <!--SIDEBAR-->
 
          <div class="white-container">
+
+
                 <!--MIGAS DE PAN--> 
                 <div class="d-flex justify-content-between flex-column flex-md-row">           
                     <div class="breadcrumbs flex-grow-1">
@@ -101,234 +100,25 @@
                             Bandeja de entrada</a> /
                         <a href="#" class="active"> Editar garantía</a>
                     </div>
-                    <!--boton de acciones-->
-                    <button class="action btn-primary me-2" type="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="material-symbols-outlined align-middle">
-                        arrow_drop_down
-                    </span>Acciones
+                    <!--boton de acciones
+                    <button class="action btn-primary me-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">Acciones
+                        <span class="material-symbols-outlined align-middle">
+                            arrow_drop_down
+                        </span>
                     </button>
                     <ul class="dropdown-menu">
                       <li>
-                        <a class="dropdown-item" href="endosar_garantia.html#tituloEndosar">
+                        <a class="dropdown-item" href="#">
                             Endosar
                         </a>
                     </li>
                       <li>
-                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalSolDev">
+                        <a class="dropdown-item" href="#">
                             Solicitar devolución
                         </a>
                       </li>
                     </ul>
-                     <!-- Modal SOLICITAR DEVOLUCION -->
-                       <div class="modal fade" id="modalSolDev" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                           <div class="modal-dialog modal-lg">
-                              <div class="modal-content">
-                                   <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Solicitar devolución / Nº Garantía: 68798</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="row my-3"> 
-                                            <div class="col-lg-3">
-                                                <label for="validationServer03" class="form-label kit-gob">Fecha y hora: </label>
-                                                <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00" />
-                                            </div>
-                                            <div class="row my-3">
-                                                <div class="col-lg-12 my-1">
-                                                    <p><strong>Empresa: </strong> Corporación Regional de Desarrollo Productivo de la Región de Tarapacá</p>
-                                                </div>
-                                                <div class="col-lg-3 my-1">
-                                                    <p><strong>R.U.T:</strong> 76.558.321-8</p>
-                                                </div>
-                                                <div class="col-lg-3 my-1">
-                                                    <p><strong>N documento: </strong> 577825</p>
-                                               </div>
-                                               <div class="col-lg-6 my-1">
-                                                    <p><strong>Tipo de garantía: </strong>Lorem ipsum lorem</p>
-                                               </div>   
-                                                <div class="col-lg-12 my-1">
-                                                    <p><strong>Descripción SAP: </strong> Donec a finibus ligula. Suspendisse eget metus aliquet, eleifend est sit amet, maximus urna.</p>
-                                                </div>
-                                                <div class="col-lg-12 my-1">
-                                                    <p><strong>Descripción Licitación: </strong> Proin ultricies nunc eu tellus luctus suscipit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                                                </div>                                                 
-                                            </div>
-                                            <div class="row my-3">
-                                                <div class="col-lg-6">
-                                                    <label for="..." class="form-label kit-gob">Nombre retirador: </label>
-                                                    <input type="text" class="form-control kit-gob" id="validationServer03" aria-describedby="validationServer03Feedback">
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <label for="..." class="form-label kit-gob">RUT retirador: </label>
-                                                    <input type="text" class="form-control kit-gob" id="validationServer03" aria-describedby="validationServer03Feedback">
-                                                </div>
-                                            </div>
-                                            <div class="row my-3">
-                                                <div class="col-lg-6">
-                                                    <label for="..." class="form-label kit-gob">Motivo de devolución: <span class="color-base-warning-dk-3">(*)</span></label>
-                                                    <select class="form-select kit-gob is-invalid" id="..." aria-describedby="validationServer04Feedback" required>
-                                                        <option selected disabled value="">Selecciona</option>
-                                                        <option value="1">...</option>
-                                                      </select>
-                                                    <div class="invalid-feedback kit-gob">
-                                                        Selecciona el campo
-                                                    </div>  
-                                                </div>
-                                                <div class="col-lg-6">
-                                                </div>
-                                                <!--INFO-->
-                                                <div class="alert m-2 my-4 kit-gob alert-primary alert-dismissible d-flex align-items-center fade show" role="alert">
-                                                    <div class="flex-shrink-0 me-2">
-                                                      <span class="material-symbols-outlined align-middle color-base-info">
-                                                        info
-                                                        </span>
-                                                     </div>
-                                                      <div>
-                                                        <h4>Información importante sobre este motivo de devolución:</h4>
-                                                        Con esta liberación de garantía, se certifica que el proyecto ha finalizado correctamente y que no existen obligaciones contractuales pendientes entre las partes.
-                                                      </div>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                                                  </div>
-                                              <!--INFO-->
-                                            </div>
-
-                                            <div class="row my-2">
-                                                <div class="col-lg-6">
-                                                    <label for="..." class="form-label kit-gob">Selecciona tipo de poder: <span class="color-base-warning-dk-3">(*)</span></label>
-                                                    <select class="form-select kit-gob is-invalid" id="..." aria-describedby="validationServer04Feedback" required>
-                                                        <option selected disabled value="">Selecciona</option>
-                                                        <option value="1">...</option>
-                                                      </select>
-                                                    <div class="invalid-feedback kit-gob">
-                                                        Selecciona el campo
-                                                    </div>  
-                                                </div>
-                                                <div class="col-lg-6">
-                                                </div>
-                                             <!--INFO-->
-                                                <div class="alert m-2 my-4 kit-gob alert-primary alert-dismissible d-flex align-items-center fade show" role="alert">
-                                                    <div class="flex-shrink-0 me-2">
-                                                      <span class="material-symbols-outlined align-middle color-base-info">
-                                                        info
-                                                        </span>
-                                                     </div>
-                                                      <div>
-                                                        <h4>Información importante sobre tipo de poderes:</h4>
-                                                        Suspendisse neque velit, suscipit vel bibendum vehicula, porttitor in nisi.
-                                                      </div>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                                                  </div>
-                                              <!--INFO-->
-                                            </div>
-                                            <div class="row mt-2">
-                                                <div class="col-sm-12 col-md-6 col-lg-6">
-                                                    <label for="..." class="form-label kit-gob">Selecciona tipo de poder: </label>
-                                                    <select class="form-select kit-gob" id="..." aria-describedby="validationServer04Feedback">
-                                                        <option selected disabled value="">Selecciona</option>
-                                                        <option value="1">...</option>
-                                                      </select>
-                                                    <div class="invalid-feedback kit-gob">
-                                                        Tipo de documento
-                                                    </div>                             
-                                                </div>
-                        
-                                            </div>
-                        
-                                            <div class="row mt-4">
-                                                <div class="col-lg-6">
-                                        <!--=====FILE INPUT / DRAG AND DROP=========-->
-                                                    <div class="container form-group drop_zone ">
-                                                    <input type="file" class="upload-button" accept=".xlsx,.xls,image/*,.doc,.docx,.ppt,.pptx,.pdf">
-                                                    <span class="material-symbols-outlined fs-1 color-blue-dark-3">
-                                                        cloud_upload
-                                                        </span>
-                                                    <span for="upload-button">
-                                                        Arrastra archivo para subirlo           
-                                                    </span>
-                                                    <span>o</span>
-                                                    <label class="btn btn-default">
-                                                        o haz clic para buscarlo
-                                                        <input type="file" class="upload-button" accept=".xlsx,.xls,image/*,.doc,.docx,.ppt,.pptx,.pdf">
-                                                    </label>
-                                                    <div class="invalid-feedback">
-                                                        Seleccionar el documento.
-                                                    </div>
-                                                    <span>
-                                                        <em><small>Solo se permiten los archivos con las siguientes extensiones: <strong>PDF, DOC, DOCX, JPG, JPEG, XLS, XLSX</strong></small></em>
-                                                    </span>
-                                                    <div id="error"></div>
-                                                    <div id="image-display"><figure></figure></div>
-                        
-                                                    <div id="dropFile" class="d-none"></div>
-                                                    </div>
-                                     <!--======FILE INPUT / DRAG AND DROP=========-->
-                                                    <button type="button" class="btn-primary my-4"> Adjuntar documento <span class="material-symbols-outlined align-middle">
-                                                        upload  </span></button>
-                                                </div>
-                                            </div>
-                                        <!--TABLA-->
-                                        <div class="table-responsive">
-                                            <table class="table table-striped">
-                                                <thead>
-                                                <tr>
-                                                    <th>Tipo de Poder</th>
-                                                    <th>Nombre documento</th>
-                                                    <th>Acciones</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                <tr>
-                                                    <td>Poder simple</td>
-                                                    <td>podersimple-v3_2025.pdf</td>
-                                                    <td> 
-                                                        <button class="action border-0 bg-transparent rounded" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <span class="material-symbols-outlined align-middle color-blue">
-                                                                more_vert
-                                                            </span>
-                                                        </button>
-                                                        <ul class="dropdown-menu">
-                                                          <li>
-                                                            <a class="dropdown-item" href="#">
-                                                                <span class="material-symbols-outlined align-middle">
-                                                                    download
-                                                                </span> Descargar
-                                                            </a>
-                                                        </li>
-                                                          <li>
-                                                            <a class="dropdown-item" href="#">
-                                                                <span class="material-symbols-outlined align-middle">
-                                                                    delete
-                                                                 </span> Eliminar
-                                                            </a>
-                                                          </li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                            </table>
-                                        </div>
-                                        <!--TABLA-->
-
-
-
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer justify-content-start">
-
-                                         <button type="button" class="btn-primary ">
-                                            <span class="material-symbols-outlined align-middle">
-                                                send
-                                                </span>
-                                            Solicitar devolución
-                                        </button>
-                                  </div>
-                               </div>
-                            </div>
-                        </div>                          
-                    <!-- Modal SOLICITAR DEVOLUCION -->  
-
-
-
-                    <!--boton de acciones-->
+                    boton de acciones-->
                     <button type="button" class="btn-secondary"> 
                         <span class="material-symbols-outlined align-middle">
                             arrow_back </span>
@@ -626,8 +416,193 @@
                     </div>
                    
                 <div class="margin-btw-titles"></div>
-                <h4 class="color-blue-dark-1 margin-title-main fw-semibold mt-4">Documentos</h4>
+                <h4 class="color-blue-dark-1 margin-title-main fw-semibold"  id="tituloEndosartabla">  Información de solicitud de devolución</h4>
 
+                <!--Este párrafo es una guia, quitar una vez que esté lista la validación porfa-->
+
+              <!--TABLA ENDOSOS-->
+                <div class="table-responsive mt-4">
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>Fecha de devolución</th>
+                            <th>Estado</th>
+                            <th>Motivo</th>
+                            <th>Detalle</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>29/11/2024</td>
+                            <td>En espera</td>
+                            <td>Finalización</td>
+                            <td>                           
+                            <a href="#" type="button" data-bs-toggle="modal" data-bs-target="#modalDetalleEndoso">
+                                <span class="material-symbols-outlined color-blue-dark-1">
+                                    visibility
+                                </span>
+                            </a>
+                            <!-- Modal Editar garantía: VER  y Respuesta Solicitar devolución-->
+                            <div class="modal fade" id="modalDetalleEndoso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                           Solicitar devolución / Nº Garantía: 68798
+                                        </h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <p><strong>Fecha y hora:</strong> 12/01/2025 - 15:49</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-12 my-3">
+                                                <p><strong>Empresa:</strong> Corporación Regional de Desarrollo Productivo de la Región de Tarapacá</p>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                   <p><strong>R.U.T:</strong> 76.558.321-8</p>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <p><strong>Nº Documento: </strong> 577825</p>
+                                           </div>
+                                           <div class="col-lg-6">
+                                                <p><strong>Tipo de garantía:</strong> Lorem ipsum lorem</p>
+                                           </div>                                                 
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="col-lg-4">
+                                                   <p><strong>Código SAP: </strong> 855522 </p>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <p><strong>Monto: </strong> $678.987.000</p>
+                                           </div>
+                                           <div class="col-lg-4">
+                                            <p><strong>Nº Licitacion:  </strong> 09776 </p>
+                                        </div>                                                      
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="col-lg">
+                                                   <p><strong>Descripción SAP:  </strong></p>
+                                                   <p>Nunc ultricies tempus leo, id scelerisque est tincidunt at. Aliquam eget auctor nisi, sit amet commodo nulla. Cras aliquet urna in tortor faucibus, eu feugiat odio lacinia. Integer eleifend eleifend mauris ut eleifend. Nullam sit amet semper justo.</p>
+                                            </div>                                                   
+                                        </div>
+                                        <div class="row my-3">
+                                            <div class="col-lg">
+                                                   <p><strong>Descripción Licitación:  </strong></p>
+                                                   <p>Nunc ultricies tempus leo, id scelerisque est tincidunt at. Aliquam eget auctor nisi, sit amet commodo nulla. Cras aliquet urna in tortor faucibus, eu feugiat odio lacinia. Integer eleifend eleifend mauris ut eleifend. Nullam sit amet semper justo.</p>
+                                            </div>                                                   
+                                        </div>
+
+
+                                        <div class="row mt-3">
+                                                <h4 class="color-blue-dark-1 margin-title-main fw-semibold my-4">Detalle de devolución:</h4>                                                       
+                                            <div class="col-lg-6">
+                                                <label for="validationServer03" class="form-label kit-gob">Nombre Retirador: </label>
+                                                <input type="text" class="form-control kit-gob" id="validationServer03" aria-describedby="validationServer03Feedback" placeholder="Alejandra Carolina Valenzuela Bustamante">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <label for="validationServer03" class="form-label kit-gob">R.U.T Retirador: </label>
+                                                <input type="text" class="form-control kit-gob" id="validationServer03" aria-describedby="validationServer03Feedback" placeholder="15.650.556-0">
+                                            </div>
+                                            <div class="col-lg-6 my-3">
+                                              <p> <strong>Motivo de devolución:</strong> Finalización</p>
+                                            </div>
+                                            <ul class="ul-download">
+                                                <li>
+                                                    <a href="#" download>Descargar solicitud de devolución</a></li>
+                                                <li>
+                                                    <a href="#" download>Descargar poder notarial / simple</a></li>
+                                            </ul>                                        
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-lg-4">
+                                                <label for="..." class="form-label kit-gob">Respuesta: <span class="color-base-warning-dk-3">(*)</span></label>
+                                                <select class="form-select kit-gob is-invalid" id="..." aria-describedby="validationServer04Feedback" required>
+                                                    <option selected disabled value="">Selecciona</option>
+                                                    <option value="1">...</option>
+                                                  </select>
+                                                <div class="invalid-feedback kit-gob">
+                                                    Selecciona respuesta
+                                                </div>   
+                                            </div>                                                   
+                                        </div>
+                                        <div class="row mt-3">
+                                        
+                                                <div class="col-lg-8">
+                                                    <label for="validationServer03" class="form-label kit-gob">Justifique la razón de rechazo: <span class="color-base-warning-dk-3">(*)</span></label>
+                                                    <textarea class="form-control kit-gob  is-invalid" id="exampleFormControlTextarea1" rows="6"></textarea required>
+                                                    <div class="invalid-feedback kit-gob">
+                                                        Justifique la razón de rechazo
+                                                    </div>      
+                                                </div>
+                                       
+
+                                        </div>
+                                        <div class="my-4">
+                                            <button type="button" class="btn-primary">
+                                                <span class="material-symbols-outlined align-middle">
+                                                    send
+                                                </span>
+                                                Enviar respuesta</button>
+                                        </div>  
+                                    </div>                                       
+                             
+                                </div>
+                            </div>                            
+                            <!-- Modal Editar garantía: VER  y Respuesta Solicitar devolución-->
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+                <!--TABLA ENDOSOS-->
+
+                <div class="row mt-4">
+                    <label for="validationServer03" class="form-label kit-gob">Retiro de garantía: <span class="color-base-warning-dk-3">(*)</span></label>
+                    <div class="col-lg-2">
+                        <div class="form-check is-invalid">
+                            <input class="form-check-input kit-gob" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label kit-gob" for="flexRadioDefault1">
+                            Presencial
+                            </label>
+                          </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="form-check">
+                            <input class="form-check-input kit-gob" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label kit-gob" for="flexRadioDefault1">
+                             Por correo certificado
+                            </label>
+                          </div>
+                    </div>
+                    <div class="invalid-feedback kit-gob">
+                        Selecciona el campo
+                    </div>  
+                </div>   
+                <!--alerta info retiro-->
+                <div class="row my-3">
+                    <div class="col-lg-8">
+                        <div class="alert kit-gob alert-warning alert-dismissible d-flex align-items-center fade show" role="alert">
+                            <div class="flex-shrink-0 me-2">
+                            <span class="material-symbols-outlined align-middle color-base-advertencia">
+                               error
+                                </span>
+                            </div>
+                            <div>
+                                <h4>Información importante sobre el retiro de la garantía:</h4>
+                                Si el retiro es presencial la garantía debe digitalizarse y subirse en la sección de “Documentos”.
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+                <!--alerta info retiro-->                            
+
+                <h4 class="color-blue-dark-1 margin-title-main fw-semibold mt-4">Documentos</h4>
                     <div class="row mt-4">
                         <div class="col-sm-12 col-md-6 col-lg-6">
                             <label for="..." class="form-label kit-gob">Tipo de documento: </label>
@@ -639,9 +614,7 @@
                                 Tipo de documento
                             </div>                             
                         </div>
-
                     </div>
-
                     <div class="row mt-4">
                         <div class="col-lg-6">
                 <!--=====FILE INPUT / DRAG AND DROP=========-->
@@ -776,8 +749,10 @@
                 <!--BOTONES FINALES-->
                 <div class="my-4">
                     <button type="button" class="btn-primary">
-                        <span class="material-symbols-outlined align-middle"> save </span> 
-                        Guardar
+                        <span class="material-symbols-outlined align-middle">
+                            send
+                        </span>
+                       Finalizar garantía
                     </button>
                     <button type="button" class="btn-secondary"> 
                         <span class="material-symbols-outlined align-middle">
@@ -797,10 +772,8 @@
 <!--MENU MOBILE -->
    <div id="modal-menu" class="d-none p-4 style-modal-menu ">
     <div style="position: relative; display: flex; height: inherit; width: inherit;">
-        <div class="box-modal-menu">
-            
-                <p id="close-menumodal"  class="cerrar-modal py-2 m-0 text-center"><i class="bi bi-x-lg"></i> Cerrar</p>
-            
+        <div class="box-modal-menu">           
+            <p id="close-menumodal"  class="cerrar-modal py-2 m-0 text-center"><i class="bi bi-x-lg"></i> Cerrar</p>            
         <div>
             <!--BOX MENU-->
             <div class="box-sidebar">
@@ -870,18 +843,8 @@
 </footer>
 <!--FOOTER-->   
 
-
-
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-    const hash = window.location.hash; // Obtén el ancla (#id)
-    if (hash) {
-        const target = document.querySelector(hash); // Busca el elemento con ese ID
-        if (target) {
-            target.scrollIntoView({ behavior: "smooth" }); // Desplazamiento suave
-        }
-    }
-});
+
 </script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
