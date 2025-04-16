@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cristinafrivera1984/kit-ui-serc@v2.13/dist/css/estilos.min.css">
+    <link rel="stylesheet" href="estilos/garantias.css">
+    <title>Sistema de Garantías</title>
+  </head>
+<body class="kit">
+
+      <!--HEADER-->
+      <header>
+        <div class="header-footer-box">
+            <div class="container-header-flex">
+                <div class="d-flex flex-row align-items-center justify-content-center me-4 box-logo">
+                    <img class="mx-4" src="images/logo-sercotec.png" width="140" height="69" alt="Logo Sercotec" title="Logo Sercotec"> 
+                    <h1>Título de sistema aquí</h1>
+                </div>
+                <div class="d-flex flex-row my-3 justify-content-center align-items-center mx-4 box-menu-not ">                
+                    <button id="burger-menu" class="btn-menu collapsed bx-menu" type="button">
+                        <i class="bi bi-list"></i> Menu
+                    </button>
+                    <div class="bx-not mx-4">
+                        <!--NOTIFICACIONES-->
+                        <div class="align-self-center">
+                            <a href="#" class="notificacion-header bx-not" id="notificationButtonHeader">
+                            <span class="material-symbols-outlined fs-2">
+                                notifications
+                            </span>
+                                <div class="bubble">
+                                3
+                                </div> 
+                            </a>
+                            <div style="position: relative;">
+                                <div id="notificationContainer" class="notification-container">
+                                    <div class="notification-header">                        
+                                        <div class="d-inline">
+                                        <span class="material-symbols-outlined align-middle">
+                                            notifications
+                                        </span>
+                                        Notificaciones
+                                        </div>                       
+                                        <span id="closeBtn" class="close-btn">&times;</span>                       
+                                    </div>                
+                                    <div class="notification-list" id="notificationList">
+                                        <!-- Notificaciones dinámicas -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!--NOTIFICACIONES--> 
+                    </div>   
+                </div>
+                <div class="d-flex flex-row my-3 justify-content-center mx-4 box-avatar">            
+                    <div class="me-3 avatar-profile">
+                    CB
+                    </div>
+    
+                    <div class="info-profile">
+                        <p>Carolina Valentina Bustamante Valenzuela</p>
+                        <p>Encargado Regional Punto MIPE</p>
+                        <p>
+                            <span class="material-symbols-outlined align-middle">
+                            location_on
+                            </span> Región Magallanes y la Antártica Chilena
+                        </p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </header>
+    <!--HEADER-->
+
+    <div class="main-box">
+        <!--SIDEBAR-->
+        <div class="sidebar-menu">
+              <!-- partial:index.partial.html -->
+              <div class="nav-bar">
+                <div class="nav-content">                   
+                       <button type="button" class="nav-button">
+                          <span class="material-symbols-outlined active">
+                            home </span> 
+                            Inicio 
+                       </button> 
+                       
+                       <button type="button" class="nav-button">
+                        <span class="material-symbols-outlined">
+                          folder_open
+                          </span>
+                          Botón 2 
+                       </button> 
+
+                       <button type="button" class="nav-button">
+                        <span class="material-symbols-outlined">
+                          settings
+                          </span>
+                          Botón 3 
+                       </button> 
+
+                       <button type="button" class="nav-button">
+                        <span class="material-symbols-outlined">
+                          logout
+                          </span>
+                          Cerrar
+                       </button>
+                                                          
+                    <div id="nav-content-highlight"></div>
+                    </div>
+              </div>
+             <!-- partial -->
+        </div> 
+         <!--SIDEBAR-->
+        
+         <div class="content-column">
+          <div class="white-container-2 no-bg-container">
+            <!--======INICIO CAJAS GLIDE=========-->
+            <div class="glide-carousel-inicio">
+              <div class="glide__track" data-glide-el="track" style="max-width: 1264px;height: 177px;">
+                <ul class="glide__slides">
+                  <!-- Aquí añade tus imágenes o contenido de las diapositivas -->
+                  <li class="glide__slide">
+                      <div class="card-home card-success">
+                          <div class="d-flex flex-row gap-2">
+                            <div class="card-img-box sucess">
+                              <span class="material-symbols-outlined color-base-exito"> contract </span>
+                            </div>
+                            <div> <h2 class="color-base-exito-dk-3">Vigentes</h2></div>
+                          </div>
+                          <p class="py-1">Garantías Vigentes</p>
+                          <h1 class="m-0">136</h1>
+                      </div>
+                  </li>
+                  <li class="glide__slide">
+                    <div class="card-home card-alert">
+                      <div class="d-flex flex-row gap-2">
+                        <div class="card-img-box warning">
+                          <span class="material-symbols-outlined color-base-warning-dk-3"> warning</span>
+                        </div>
+                        <div><h2 class="color-base-warning-dk-3">Por Vencer</h2></div>
+                      </div>
+                      <p class="py-1">Garantías por vencer</p>
+                      <h1 class="m-0">14</h1>
+                  </div>
+                  </li>
+                  <li class="glide__slide">
+                    <div class="card-home card-success">
+                        <div class="d-flex flex-row gap-2">
+                          <div class="card-img-box sucess">
+                            <span class="material-symbols-outlined color-base-exito"> contract </span>
+                          </div>
+                          <div> <h2 class="color-base-exito-dk-3">Total</h2></div>
+                        </div>
+                        <p class="py-1">Garantías Totales </p>
+                        <h1 class="m-0">158</h1>
+                    </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="card-home card-gray">
+                    <div class="d-flex flex-row gap-2">
+                      <div class="card-img-box gray">
+                        <span class="material-symbols-outlined color-gray-30">  contract_delete </span>
+                      </div>
+                      <div> <h2 class="font-color">Vencidas</h2></div>
+                    </div>
+                    <p class="py-1">Garantías Vencidas </p>
+                    <h1 class="m-0">764</h1>
+                </div>
+                </li>
+                  <!-- Añade más diapositivas según sea necesario -->
+                </ul>
+              </div>
+              
+            <!-- Controles de navegación -->
+            <div class="glide__arrows controles-glide-inicio" data-glide-el="controls">
+              <button class="arrow-link-left" data-glide-dir="<">
+                  <span class="material-symbols-outlined glide-control-style">
+                  arrow_circle_left
+                  </span>
+              </button>
+              <button class="arrow-link-right" data-glide-dir=">">
+                  <span class="material-symbols-outlined glide-control-style">
+                      arrow_circle_right
+                      </span>
+              </button>
+            </div>
+            </div>  
+            <!--======FIN CAJAS GLIDE=========-->
+           </div>
+         <div class="white-container-2">
+              <!--BOTONES-->
+              <div class="d-flex justify-content-end my-4">
+              <button type="button" class="btn-primary"><span class="material-symbols-outlined align-middle">
+              add_circle </span> Añadir Garantía</button>
+              </div>
+              <!--BOTONES-->
+          
+            <h2 class="color-blue-dark-1 margin-title-main fw-semibold my-4">Lista de Garantías</h2>
+
+            <!--FORMULARIO search--->
+            <div class="form-floating my-3 mx-1 w-75">
+              <input type="text" class="form-control buscador-input" id="floatingInput" placeholder="Buscar....">
+              <label for="floatingInput">Buscador garantías</label>
+              <p style="font-size: 14px;color:gray; padding: 0.2rem 0; margin-bottom: 26px;">Puedes buscar por: Nombre de Tomador,  Rut Tomador, Código SAP o Licitación </p>
+            </div>
+
+            <a class="chips-main-2 primary-info-light-blue" style="text-decoration: none; margin-bottom: 10px;" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Filtro avanzado<span class="material-symbols-outlined align-middle">
+                arrow_drop_down
+                </span>
+            </a>
+
+            <div class="collapse my-3" id="collapseExample">
+              <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                  <label for="" class="form-label kit-gob">Desde:</label>
+                  <input class="form-control kit-gob" type="date" id="" name="Desde">
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                  <label for="" class="form-label kit-gob">Hasta:</label>
+                  <input class="form-control kit-gob" type="date" id="" name="Hasta">
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                  <label for="" class="form-label kit-gob">Monto desde:</label>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text money-box">$</span>
+                    <input type="number" class="form-control kit-gob" aria-label="Monto Hasta">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                  <label for="" class="form-label kit-gob">Monto hasta:</label>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text money-box">$</span>
+                    <input type="number" class="form-control kit-gob" aria-label="Monto Hasta">
+                  </div>
+                </div>             
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                  <label for="" class="form-label kit-gob">Estado:</label>
+                  <select class="form-select kit-gob is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required="">
+                    <option selected="" disabled="" value="">Selecciona..</option>
+                    <option value="">🔵 Ingresada</option>
+                    <option value="">🟢 Vigente</option>
+                    <option value="">🟡 Devuelta</option>
+                    <option value="">🔴 Vencida</option>
+                  </select>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                  <label for="" class="form-label kit-gob">Centro de costo:</label>
+                  <select class="form-select kit-gob is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required="">
+                    <option selected="" disabled="" value="">Selecciona..</option>
+                    <option value="">XXX</option>
+                    <option value="">XXX</option>
+                  </select>
+                </div>
+              </div>
+              <!--botones de busqueda -->
+              <div class="row align-items-center justify-content-end my-2">
+              <button type="button" class="btn-primary mx-2"><span class="material-symbols-outlined align-middle">
+                search </span> Buscar</button>
+              <button type="button" class="btn-secondary mx-2">Limpiar</button>  
+              </div>       
+              <!--botones de busqueda -->
+            </div>
+
+
+              <!--FORMULARIO search--->
+              <div class="table-responsive mt-4">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th style="width: 5%;">ID</th>
+                      <th style="width: 15%;">Nombre Tomador</th>
+                      <th style="width: 15%;">R.U.N Tomador</th>
+                      <th style="width: 15%;">Cobertura</th>
+                      <th style="width: 10%;">Monto Total</th>
+                      <th style="width: 10%;">Fecha Venc.</th>
+                      <th style="width: 15%;">Fecha Fin Contrato</th>
+                      <th style="width: 5%;">Cód.SAP</th>
+                      <th style="width: 5%;">Estado</th>
+                      <th style="width: 5%;">Acción</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-group-divider">
+                    <tr>
+                      <td>0147</td>
+                      <td>Carolina Valentina Bustamante Troncoso</td>
+                      <td>15608058-6</td>
+                      <td>Fiel cumplimiento</td>
+                      <td>$XXXXXXX</td>
+                      <td>18/09/2024</td>
+                      <td>18/09/2024</td>
+                      <td>8654</td>
+                      <td><span class="chips-main primary-info-light-blue">Ingresada</span></td>
+                      <td> 
+                        <button class="action border-0 bg-transparent rounded" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="material-symbols-outlined align-middle color-blue">
+                                more_vert
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">
+                                <span class="material-symbols-outlined align-middle">
+                            visibility 
+                                </span> Ver
+                            </a>
+                        </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                                <span class="material-symbols-outlined align-middle">
+                            edit
+                                </span> Editar
+                            </a>
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>0147</td>
+                      <td>Carolina Valentina Bustamante Troncoso</td>
+                      <td>15608058-6</td>
+                      <td>Fiel cumplimiento</td>
+                      <td>$XXXXXXX</td>
+                      <td>18/09/2024</td>
+                      <td>18/09/2024</td>
+                      <td>8654</td>
+                      <td><span class="chips-main danger-light">Vencida</span></td>
+                      <td> 
+                        <button class="action border-0 bg-transparent rounded" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="material-symbols-outlined align-middle color-blue">
+                                more_vert
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">
+                                <span class="material-symbols-outlined align-middle">
+                            visibility 
+                                </span> Ver
+                            </a>
+                        </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                                <span class="material-symbols-outlined align-middle">
+                            edit
+                                </span> Editar
+                            </a>
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+             
+            <!--TABLA-->
+               <!--PAGINACION 2-->
+             <div class="row align-items-center justify-content-end my-2">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2 my-1">
+                    <div class="d-flex flex-row align-items-center">
+                      <div class="me-3 align-self-end">
+                        <label for="Mostrar" class="form-label kit-gob">Mostrar:</label>
+                      </div>
+                      <div>
+                        <select class="form-select kit-gob" name="items">
+                          <option value="10">10</option>
+                          <option value="20">20</option>
+                          <option value="30">30</option>
+                      </select>  
+                      </div>
+                    </div>                  
+                </div>
+                <div class="col-auto my-1">
+                  <p>Mostrando <strong> 1 - 6 de 18</strong> </p>
+                </div>
+                <div class="col-auto my-1">
+                <!--PAGINATION-->
+                  <nav aria-label="...">
+                    <ul class="pagination kit-gob">
+                      <li class="page-item kit-gob disabled">
+                        <span class="page-link kit-gob">
+                            <span class="material-symbols-outlined">
+                                chevron_left
+                            </span>
+                        </span>
+                      </li>
+                      <li class="page-item kit-gob"><a class="page-link kit-gob" href="#">1</a></li>
+                      <li class="page-item kit-gob active" aria-current="page">
+                        <span class="page-link kit-gob">2</span>
+                      </li>
+                      <li class="page-item kit-gob"><a class="page-link kit-gob" href="#">3</a></li>
+                      <li class="page-item kit-gob"><a class="page-link kit-gob" href="#">4</a></li>
+                      <li class="page-item kit-gob">
+                        <a class="page-link kit-gob arrows" href="#">
+                            <span class="material-symbols-outlined">
+                                    chevron_right
+                            </span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <!--PAGINATION-->
+                </div>
+             </div>
+             <!--PAGINACION 2-->                         
+            
+    
+
+
+
+         </div>
+        </div>
+
+    </div>
+
+
+    
+<!--MENU MOBILE -->
+<div id="modal-menu" class="d-none p-4 style-modal-menu ">
+    <div style="position: relative; display: flex; height: inherit; width: inherit;">
+        <div class="box-modal-menu">
+            
+                <p id="close-menumodal"  class="cerrar-modal py-2 m-0 text-center"><i class="bi bi-x-lg"></i> Cerrar</p>
+            
+        <div>
+            <!--BOX MENU-->
+            <div class="box-sidebar">
+              <div class="nav-bar">
+                <div class="nav-content">                   
+                       <button type="button" class="nav-button">
+                          <span class="material-symbols-outlined active">
+                            home </span> 
+                            Inicio 
+                       </button> 
+                       
+                       <button type="button" class="nav-button">
+                        <span class="material-symbols-outlined">
+                          folder_open
+                          </span>
+                          Botón 2 
+                       </button> 
+
+                       <button type="button" class="nav-button">
+                        <span class="material-symbols-outlined">
+                          settings
+                          </span>
+                          Botón 3 
+                       </button> 
+
+                       <button type="button" class="nav-button">
+                        <span class="material-symbols-outlined">
+                          logout
+                          </span>
+                          Cerrar
+                       </button>
+                                                          
+                    <div id="nav-content-highlight"></div>
+                </div>
+              </div>
+
+              </div>
+            <!--BOX MENU-->           
+        </div>
+        </div>
+    </div>
+</div>
+<!--MENU MOBILE -->
+
+
+<!--FOOTER-->
+<footer>
+<div class="container-footer franja-footer">
+    <div class="item-footer">
+        <a href="https://www.economia.gob.cl/" target="_blank"><img src="/Images/logo-MinEconomia_blanco.png" class="m-2 img-fluid" width="160" height="146" alt="Logo Ministerio de Economía, Fomento y Turismo" title="Logo Ministerio de Economía, Fomento y Turismo"></a>
+    </div>
+    <div class="item-footer">
+        <img class="mx-2 my-1" src="/images/logotipo-sello.png" width="200" height="61" alt="Sello">
+        <img class="mx-2 my-1" src="/images/white-sello-de-compromiso-con-la-innovacion.png" width="100" height="100" alt="Sello">
+    </div>
+    <div class="item-footer">
+        <h5>Síguenos en nuestras redes sociales:</h5>
+        <div class="d-flex flex-row gap-20 my-4">
+            <div><a href="https://www.facebook.com/sercotec" target="_blank"> <img src="/images/icons/facebook.svg" width="34" height="34" alt="Sercotec Instagram"></a> </div>
+            <div><a href="https://www.instagram.com/sercotec_cl" target="_blank"> <img src="/images/icons/instagram.svg" width="34" height="34" alt="Sercotec Facebook"></a> </div>
+            <div><a href="https://twitter.com/Sercotec_Chile" target="_blank"> <img src="/images/icons/twitter.svg" width="34" height="34" alt="Sercotec Twitter"></a> </div>
+            <div><a href="https://www.youtube.com/user/CanalSERCOTEC" target="_blank"> <img src="/images/icons/youtube.svg" width="40" height="40" alt="Sercotec Youtube"></a> </div>
+            <div><a href="https://cl.linkedin.com/company/sercotecchile" target="_blank"> <img src="/Images/icons/linkedin.svg" width="34" height="34" alt="Sercotec Linkedin"></a> </div>
+        </div>
+    </div>
+</div>
+</footer>
+<!--FOOTER-->   
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="scripts/funciones.js"></script>
+<script>
+  const liveToastBtn = document.getElementById('notificationButtonHeader');
+  const notificationContainer = document.getElementById('notificationContainer');
+  const closeBtn = document.getElementById('closeBtn');
+  const notificationList = document.getElementById('notificationList');
+  
+  liveToastBtn.addEventListener('click', () => {
+    notificationContainer.style.display = 'flex';
+  });
+  
+  closeBtn.addEventListener('click', () => {
+    notificationContainer.style.display = 'none';
+  });
+  
+  function addNotification(message, dateTime, isUnread) {
+    const notif = document.createElement('div');
+    notif.classList.add('notification-item');
+    if (isUnread) notif.classList.add('unread');
+  
+    notif.innerHTML = `
+      ${message}
+      <div class="notification-date">${dateTime}</div>
+    `;
+  
+    notificationList.prepend(notif); // Las más nuevas arriba
+  }
+  
+  // EJEMPLO DE USO
+  addNotification('Garantía #1241 fue enviada a Custodia.', '07/04/2025 - 16:30 hrs', true);
+  addNotification('Garantía #3455 fue enviada a Firma.', '06/04/2025 - 12:10 hrs', false);
+  addNotification('Garantía #28376 ha sido creada.', '07/04/2025 - 17:20 hrs', true);
+  addNotification('Garantía #1298 ha sido devuelta.', '07/04/2025 - 17:20 hrs', true);
+  </script> 
+
+</body>
+</html>

@@ -46,3 +46,69 @@ ul.ul-download li::before{
   background-repeat: no-repeat;
   filter: brightness(0) saturate(100%) invert(19%) sepia(98%) saturate(2101%) hue-rotate(208deg) brightness(82%) contrast(92%);
 }
+
+
+/*BORRAR ESTO*/
+
+
+
+/*BORRAR ESTO*/
+
+
+
+.input-group-text.money-box {
+  background-color: rgba(var(--base-blue), 1);
+  border: 1px solid rgba(var(--font-color), 1);
+  border-radius: 0px;
+  color: white;
+  font-weight: 500;
+}
+
+a[aria-expanded="true"] .material-symbols-outlined {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.material-symbols-outlined {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.chips-main-2 {
+  padding: 0.7rem 0.6rem;
+  border-radius: var(--border-radius-chips);
+  font-size: var(--font-size-small);
+  font-weight: 700;
+  width: fit-content;
+}
+
+.chips-main-2.primary-info-light-blue {
+  background-color: rgba(var(--base-info-light-4),1);
+  border:none;
+  color: rgba(var(--base-info-dark-4),1);
+}
+
+
+/*CONTAINER ESPECIAL PARA GARANTIAS*/
+.content-column {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Espacio entre los dos white-containers */
+  margin: 0 1rem;
+}
+
+.white-container-2 {
+  border: 1px solid rgba(var(--grey-20), 1);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  margin: 0; /* importante para que no desordene el layout */
+}
+
+.no-bg-container {
+  background-color: transparent;
+  border: none;
+  padding: 1.4rem 0;
+}
+/*CONTAINER ESPECIAL PARA GARANTIAS*/
